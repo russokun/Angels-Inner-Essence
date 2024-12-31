@@ -1,0 +1,8 @@
+/* Estilos globales de la aplicación */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-primary text-white;
+} 
