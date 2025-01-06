@@ -1,8 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #1B1464;
+  --color-secondary: #FFC312;
+  --color-accent: #EA2027;
+}
+
 /* Estilos globales de la aplicación */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-primary text-white;
+  @apply bg-primary text-white font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display;
+}
+
+/* Optimización de imágenes responsivas */
+.img-container {
+  @apply relative overflow-hidden;
+}
+
+.img-container img {
+  @apply w-full h-full object-cover transition-transform duration-300;
+}
+
+/* Contenedores adaptables */
+.section-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+/* Animaciones suaves */
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Gradientes y overlays */
+.gradient-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent;
+}
+
+/* Transiciones suaves */
+.color-transition {
+  @apply transition-colors duration-300;
+}
+
+/* Gradiente de texto */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-secondary;
+}
+
+/* Opcional: Variación del gradiente */
+.gradient-text-reverse {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent;
 } 

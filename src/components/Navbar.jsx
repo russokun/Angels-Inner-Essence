@@ -21,11 +21,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-primary bg-opacity-95 z-50 py-4 px-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-secondary">Arquitectura de Vida</h1>
+        <h1 className="text-2xl md:text-3xl font-bold gradient-text">
+          Arquitectura de Vida
+          <span className="block text-sm font-normal text-secondary">Transforma tu Esencia</span>
+        </h1>
 
         {/* Hamburger Menu para móvil */}
         <button 
-          className="md:hidden text-secondary"
+          className="md:hidden gradient-text p-2 rounded-lg hover:opacity-80 transition-opacity"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg 

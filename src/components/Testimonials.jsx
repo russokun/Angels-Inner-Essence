@@ -13,32 +13,38 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="testimonials" className="py-24">
+      <div className="section-container">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12">Casos de Éxito</h3>
+          <h3 className="text-3xl xs:text-4xl lg:text-5xl font-bold text-center mb-16">
+            Casos de Éxito
+          </h3>
 
           {/* Testimonios */}
-          <div className="grid md:grid-cols-2 gap-8 mb-20">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-20">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="p-6 bg-black bg-opacity-30 rounded-lg hover:bg-opacity-40 transition-all"
+                className="group p-8 rounded-xl bg-dark/30 hover:bg-dark/40 transition-all duration-300 hover:shadow-xl border-l-4 border-accent/50 hover:border-accent"
               >
-                <p className="text-gray-300 italic mb-4 text-lg">"{testimonial.quote}"</p>
-                <p className="text-secondary font-semibold">— {testimonial.author}</p>
+                <p className="text-light/90 italic mb-6 text-lg leading-relaxed">"{testimonial.quote}"</p>
+                <p className="text-secondary group-hover:text-accent font-semibold text-lg transition-colors">— {testimonial.author}</p>
               </div>
             ))}
           </div>
 
           {/* Imagen de Conexiones Poderosas */}
-          <div className="max-w-4xl mx-auto">
-            <div className="aspect-[16/9] overflow-hidden rounded-lg">
-              <img 
-                src={testimonialImage} 
-                alt="Conexiones Poderosas"
-                className="w-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-              />
+          <div className="max-w-5xl mx-auto">
+            <div className="aspect-[16/10] md:aspect-[21/9] overflow-hidden rounded-xl shadow-2xl">
+              <div className="relative group h-full">
+                <img 
+                  src={testimonialImage} 
+                  alt="Conexiones Poderosas"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent"></div>
+              </div>
             </div>
           </div>
         </div>

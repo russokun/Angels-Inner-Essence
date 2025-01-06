@@ -2,33 +2,58 @@ import pricingImage from '../assets/6.png'
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-black bg-opacity-30 py-20">
-      <div className="container mx-auto px-4">
+    <section id="pricing" className="relative py-24 overflow-hidden">
+      <div className="absolute inset-0 bg-dark/30 z-0"></div>
+      <div className="section-container relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12">Oferta Especial de Lanzamiento</h3>
+          <h3 className="text-3xl xs:text-4xl lg:text-5xl font-bold text-center mb-16">
+            Oferta Especial de Lanzamiento
+          </h3>
           
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Imagen de pricing */}
-            <div className="order-2 md:order-1">
-              <img 
-                src={pricingImage} 
-                alt="Inner Essence Cards Showcase"
-                className="w-full rounded-lg shadow-xl hover:scale-[1.02] transition-transform duration-500"
-              />
+            <div className="order-2 md:order-1 overflow-hidden rounded-xl shadow-2xl">
+              <div className="aspect-[4/3] relative group">
+                <img 
+                  src={pricingImage} 
+                  alt="Inner Essence Cards Showcase"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="gradient-overlay opacity-30"></div>
+              </div>
             </div>
 
             {/* Pricing card */}
             <div className="order-1 md:order-2">
-              <div className="p-8 bg-primary border-2 border-secondary rounded-lg">
-                <p className="text-4xl font-bold text-secondary mb-4">$69.99</p>
-                <p className="text-gray-300 mb-4">Ahorra $30</p>
-                <ul className="text-left space-y-3 mb-6">
-                  <li>✓ Mazo Angels Essence</li>
-                  <li>✓ Mazo Inner Essence</li>
-                  <li>✓ Guías de Preguntas y Ejercicios</li>
-                  <li>✓ Acceso a la Comunidad</li>
+              <div className="p-8 xs:p-10 bg-dark/50 border-2 border-secondary rounded-xl shadow-xl">
+                <div className="flex items-center gap-4 mb-4">
+                  <p className="text-4xl xs:text-5xl font-bold text-secondary">$69.99</p>
+                  <div className="text-lg">
+                    <span className="line-through text-light/50">$99.99</span>
+                    <span className="ml-2 text-accent font-bold">-30%</span>
+                  </div>
+                </div>
+                <p className="text-xl text-accent font-semibold mb-6">¡Ahorra $30 en el lanzamiento!</p>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center text-lg text-light/80">
+                    <span className="text-secondary mr-3">✓</span>
+                    Mazo Angels Essence
+                  </li>
+                  <li className="flex items-center text-lg text-light/80">
+                    <span className="text-secondary mr-3">✓</span>
+                    Mazo Inner Essence
+                  </li>
+                  <li className="flex items-center text-lg text-light/80">
+                    <span className="text-secondary mr-3">✓</span>
+                    Guías de Preguntas y Ejercicios
+                  </li>
+                  <li className="flex items-center text-lg text-light/80">
+                    <span className="text-secondary mr-3">✓</span>
+                    Acceso a la Comunidad
+                  </li>
                 </ul>
-                <button className="w-full bg-secondary text-primary px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all">
+                <button className="w-full bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
                   QUIERO MI PACK AHORA
                 </button>
               </div>
