@@ -37,7 +37,7 @@ export default function Footer() {
             <p>
               Desarrollado con <span className="text-accent">♥</span> por{' '}
               <a 
-                href="https://tu-portfolio.com" 
+                href="https://russ0devportfolio.netlify.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="gradient-text hover:opacity-80 transition-opacity"
