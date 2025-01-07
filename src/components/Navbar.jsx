@@ -26,33 +26,36 @@ export default function Navbar() {
           <span className="block text-sm font-normal text-secondary">Transforma tu Esencia</span>
         </h1>
 
-        {/* Hamburger Menu para móvil */}
+        {/* Menú hamburguesa mejorado */}
         <button 
-          className="md:hidden gradient-text p-2 rounded-lg hover:opacity-80 transition-opacity"
+          className="md:hidden p-3 rounded-lg bg-dark/50 hover:bg-dark/70 transition-all group"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
-          <svg 
-            className="w-6 h-6" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            {isMenuOpen ? (
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
+          <div className="relative w-6 h-6">
+            {/* Líneas del menú con animación */}
+            <span 
+              className={`absolute left-0 block h-0.5 w-full bg-gradient-to-r from-accent to-secondary transform transition-all duration-300 ease-in-out ${
+                isMenuOpen 
+                  ? 'rotate-45 top-3' 
+                  : 'rotate-0 top-1'
+              }`}
+            ></span>
+            <span 
+              className={`absolute left-0 block h-0.5 w-full bg-gradient-to-r from-accent to-secondary transform transition-all duration-300 ease-in-out ${
+                isMenuOpen 
+                  ? 'opacity-0' 
+                  : 'opacity-100 top-3'
+              }`}
+            ></span>
+            <span 
+              className={`absolute left-0 block h-0.5 w-full bg-gradient-to-r from-accent to-secondary transform transition-all duration-300 ease-in-out ${
+                isMenuOpen 
+                  ? '-rotate-45 top-3' 
+                  : 'rotate-0 top-5'
+              }`}
+            ></span>
+          </div>
         </button>
 
         {/* Menú de navegación para desktop */}
@@ -77,7 +80,10 @@ export default function Navbar() {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => handleNavClick(item.id)}
+                onClick={() => {
+                  scrollToSection(item.id)
+                  setIsMenuOpen(false)
+                }}
                 className="block w-full text-left px-4 py-2 text-gray-300 hover:text-secondary transition-colors"
               >
                 {item.name}
