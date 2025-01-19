@@ -24,10 +24,12 @@ export default function Author() {
           <h4 className="text-2xl xs:text-3xl text-secondary mb-6 font-display">Ana Lidia Peña</h4>
           <div className="space-y-4 text-light/90">
             <p className="text-lg">
-              Fundadora de Arquitectura de Vida y especialista en fototerapia y metodologías creativas de intervención.
+            Fundadora de Arquitectura de Vida y especialista en el diseño y creacion de herramientas lúdicas de impacto, experta en fototerapia, Ana Lidia Peña lleva años transformando vidas a través de metodologías creativas y emocionales. Su pasión por el desarrollo personal y la facilitación la ha llevado a crear herramientas como Angels & Inner Essence Cards, diseñadas para ayudarte a que acompañes a tus coaches, participantes o pacientes a descubrir y potenciar tu verdadera esencia.
+
             </p>
             <p className="text-lg">
-              Con años de experiencia en facilitación y desarrollo personal, mi misión es ayudarte a descubrir y potenciar tu verdadera esencia.
+            “Creo firmemente que el autodescubrimiento y la sanación son procesos fundamentales para transformar la vida de las personas, y estas cartas son mi manera de contribuir a ese propósito.”
+
             </p>
           </div>
         </div>

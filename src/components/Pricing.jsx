@@ -27,6 +27,7 @@ export default function Pricing() {
             {/* Pricing card */}
             <div className="order-1 md:order-2">
               <div className="p-8 xs:p-10 bg-dark/50 border-2 border-secondary rounded-xl shadow-xl">
+                <h4 className="text-2xl font-bold text-light mb-6">Pack Completo</h4>
                 <div className="flex items-center gap-4 mb-4">
                   <p className="text-4xl xs:text-5xl font-bold text-secondary">$69.99</p>
                   <div className="text-lg">
@@ -34,27 +35,29 @@ export default function Pricing() {
                     <span className="ml-2 text-accent font-bold">-30%</span>
                   </div>
                 </div>
-                <p className="text-xl text-accent font-semibold mb-6">¡Ahorra $30 en el lanzamiento!</p>
+                <p className="text-xl text-accent font-semibold mb-6">¡Ahorra $30 por tiempo limitado!</p>
+                
+                <p className="text-xl font-semibold text-light mb-4">Incluye:</p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center text-lg text-light/80">
-                    <span className="text-secondary mr-3">✓</span>
+                    <span className="text-secondary mr-3">⦁</span>
                     Mazo Angels Essence
                   </li>
                   <li className="flex items-center text-lg text-light/80">
-                    <span className="text-secondary mr-3">✓</span>
+                    <span className="text-secondary mr-3">⦁</span>
                     Mazo Inner Essence
                   </li>
                   <li className="flex items-center text-lg text-light/80">
-                    <span className="text-secondary mr-3">✓</span>
-                    Guías de Preguntas y Ejercicios
+                    <span className="text-secondary mr-3">⦁</span>
+                    Guías de preguntas y ejercicios descargables
                   </li>
                   <li className="flex items-center text-lg text-light/80">
-                    <span className="text-secondary mr-3">✓</span>
-                    Acceso a la Comunidad
+                    <span className="text-secondary mr-3">⦁</span>
+                    Acceso exclusivo a la comunidad de facilitadores
                   </li>
                 </ul>
-                <button className="w-full bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
-                  QUIERO MI PACK AHORA
+                <button className="w-full bg-secondary text-primary px-8 py-4 text-sm rounded-full font-bold xs:px-10 hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
+                  ¡Consigue tu pack y transforma tus sesiones hoy mismo!
                 </button>
               </div>
             </div>
@@ -63,4 +66,4 @@ export default function Pricing() {
       </div>
     </section>
   )
-} 
+}

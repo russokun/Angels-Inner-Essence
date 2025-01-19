@@ -23,7 +23,9 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl md:text-3xl font-bold gradient-text">
           Arquitectura de Vida
-          <span className="block text-sm font-normal text-secondary">Transforma tu Esencia</span>
+          <span className="block text-sm font-normal text-secondary">Desbloquea emociones y guía a tus clientes hacia su máximo potencial con cartas transformadoras.
+            
+          </span>
         </h1>
 
         {/* Menú hamburguesa mejorado */}
@@ -59,7 +61,7 @@ export default function Navbar() {
         </button>
 
         {/* Menú de navegación para desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           {navItems.map((item) => (
             <button
               key={item.name}
@@ -69,9 +71,6 @@ export default function Navbar() {
               {item.name}
             </button>
           ))}
-          <button className="bg-secondary text-primary px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
-            ¡QUIERO MIS MAZOS AHORA!
-          </button>
         </div>
 
         {/* Menú móvil */}

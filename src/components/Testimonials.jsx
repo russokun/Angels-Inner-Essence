@@ -2,7 +2,7 @@ import testimonialImage from '../assets/9.png'
 
 const testimonials = [
   {
-    quote: "He llevado Angels Essence a mis sesiones de coaching y mis clientes descubrieron emociones que desconocían. ¡Impactante!",
+    quote: "He llevado Angels Essence a mis sesiones de coaching y mis clientes han descubierto emociones que desconocían. ¡El impacto ha sido asombroso!",
     author: "María José, Coach Certificada"
   },
   {
@@ -33,6 +33,13 @@ export default function Testimonials() {
             ))}
           </div>
 
+          {/* CTA */}
+          <div className="text-center mb-20">
+            <p className="text-2xl md:text-3xl text-light/90 font-semibold">
+              Estas cartas ya están cambiando vidas. ¿Te atreves a explorar su poder?
+            </p>
+          </div>
+
           {/* Imagen de Conexiones Poderosas */}
           <div className="max-w-5xl mx-auto">
             <div className="aspect-[16/10] md:aspect-[21/9] overflow-hidden rounded-xl shadow-2xl">
@@ -47,8 +54,18 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
+
+          {/* Final Message */}
+          <div className="max-w-4xl mx-auto mt-16 text-center">
+            <h4 className="text-2xl md:text-3xl font-bold text-secondary mb-6">
+              Conexiones Poderosas
+            </h4>
+            <p className="text-lg md:text-xl text-light/90 leading-relaxed">
+              Únete a esta experiencia única de sanación y crecimiento. Con Angels & Inner Essence Cards, estarás equipado para crear sesiones memorables, profundas y efectivas que marcarán un antes y un después en tus clientes.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   )
-} 
+}

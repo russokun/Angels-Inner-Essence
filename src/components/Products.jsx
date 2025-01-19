@@ -4,14 +4,14 @@ import innerEssenceImage from '../assets/10.png'
 const features = [
   {
     title: "Angels Essence",
-    description: "Conecta con tu Niño Interior y sana experiencias pasadas a través de imágenes evocadoras que facilitan la catarsis emocional.",
-    benefits: ["Conexión con el niño interior", "Liberación de bloqueos", "Herramienta terapéutica"],
+    description: "Conecta profundamente con tu Niño Interior, sana heridas emocionales y libera bloqueos que te impiden avanzar. A través de imágenes evocadoras, estas cartas te permiten explorar recuerdos y emociones olvidadas.",
+    benefits: ["Conexión con el niño interior", "Liberación de bloqueos emocionales", "Herramienta terapéutica intuitiva"],
     image: angelsEssenceImage
   },
   {
     title: "Inner Essence",
-    description: "Proyecta y diseña tu futuro ideal con claridad, encontrando la motivación y el propósito para alcanzar tus metas.",
-    benefits: ["Diseño de futuro", "Claridad mental", "Inspiración continua"],
+    description: "Diseña tu mejor versión futura y encuentra la claridad y motivación necesarias para alcanzar tus metas. Estas cartas fomentan la introspección y el enfoque en tus objetivos.",
+    benefits: ["Diseña un funturo ideal", "Claridad mental y emocional", "Inspiración y propósito continuo"],
     image: innerEssenceImage
   }
 ]

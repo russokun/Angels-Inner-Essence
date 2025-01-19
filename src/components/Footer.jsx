@@ -15,15 +15,27 @@ export default function Footer() {
                 href="mailto:info@arquitecturadevida.com" 
                 className="hover:text-secondary transition-colors"
               >
-                info@arquitecturadevida.com
+                📧 Contacto: info@arquitecturadevida.com
+
               </a>
               <a 
                 href="tel:+123456789" 
                 className="hover:text-secondary transition-colors"
               >
-                +1 (234) 567-89
+                📞 Teléfono: +1 (809) 605-1317
+
               </a>
             </div>
+          </div>
+
+          {/* Línea separadora sutil */}
+          <div className="w-24 h-px bg-light/10 mx-auto"></div>
+
+          {/* CTA Final */}
+          <div className="max-w-2xl mx-auto px-4">
+            <p className="text-sm sm:text-base md:text-lg text-light/80 leading-relaxed">
+              No pierdas la oportunidad de llevar tus sesiones al siguiente nivel. ¡Consigue tu pack ahora y comienza a generar conexiones profundas y auténticas!
+            </p>
           </div>
 
           {/* Línea separadora sutil */}

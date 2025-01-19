@@ -27,11 +27,11 @@ export default function CallToAction() {
             </div>
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-xl text-light/90 mb-8 leading-relaxed">
-                Este curso es tu pasaporte para llevar tus sesiones y talleres a nuevas alturas. 
-                Descubre el poder transformador de los ejercicios con Angels Essence y eleva tu práctica a un nivel superior.
+              Haz clic en el enlace y empieza a transformar vidas con Angels & Inner Essence Cards.
               </p>
               <button className="bg-secondary text-primary px-10 py-4 rounded-full hover:bg-opacity-90 font-bold text-lg transition-all shadow-lg hover:shadow-xl">
-                REGÍSTRATE EN EL LINK
+              ¡Regístrate Ahora! 
+
               </button>
             </div>
           </div>
